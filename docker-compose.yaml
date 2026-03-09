@@ -1,0 +1,9 @@
+version: "3.8"
+
+services:
+  iris-serving:
+    build: .
+    container_name: iris_tf_serving
+    ports:
+      - "8501:8501"
+    restart: unless-stopped
